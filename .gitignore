@@ -1,0 +1,8 @@
+﻿node_modules
+.env
+build
+dist
+.idea
+*.log
+srd-backend/uploads/
+srd-backend/uploads/

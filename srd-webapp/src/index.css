@@ -1,0 +1,344 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+/* ============================================
+   STATUS BADGES - LIGHT MODE
+   ============================================ */
+.badge-open {
+  background-color: #fef3c7 !important;
+  color: #92400e !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 0.25rem 0.625rem !important;
+  border-radius: 9999px !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+}
+
+.badge-in_progress {
+  background-color: #dbeafe !important;
+  color: #1e40af !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 0.25rem 0.625rem !important;
+  border-radius: 9999px !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+}
+
+.badge-resolved {
+  background-color: #d1fae5 !important;
+  color: #065f46 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 0.25rem 0.625rem !important;
+  border-radius: 9999px !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+}
+
+.badge-closed {
+  background-color: #fee2e2 !important;
+  color: #991b1b !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 0.25rem 0.625rem !important;
+  border-radius: 9999px !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+}
+
+/* Priority Badges - Light Mode */
+.priority-low {
+  background-color: #f3f4f6 !important;
+  color: #374151 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 0.25rem 0.625rem !important;
+  border-radius: 9999px !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+}
+
+.priority-medium {
+  background-color: #dbeafe !important;
+  color: #1e40af !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 0.25rem 0.625rem !important;
+  border-radius: 9999px !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+}
+
+.priority-high {
+  background-color: #fed7aa !important;
+  color: #9a3412 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 0.25rem 0.625rem !important;
+  border-radius: 9999px !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+}
+
+.priority-urgent {
+  background-color: #fee2e2 !important;
+  color: #991b1b !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 0.25rem 0.625rem !important;
+  border-radius: 9999px !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+}
+
+/* ============================================
+   DARK MODE - OVERRIDES
+   ============================================ */
+.dark body {
+  background: #0f0f1a;
+  color: #e2e8f0;
+}
+
+.dark .bg-white {
+  background-color: #1e1e2e !important;
+}
+
+.dark .text-gray-900 {
+  color: #ffffff !important;
+}
+
+.dark .text-gray-700 {
+  color: #cbd5e1 !important;
+}
+
+.dark .text-gray-500 {
+  color: #64748b !important;
+}
+
+.dark .border-gray-100,
+.dark .border-gray-200 {
+  border-color: #2d3748 !important;
+}
+
+/* ============================================
+   DARK MODE STATUS BADGES
+   ============================================ */
+.dark .badge-open {
+  background-color: #fbbf24 !important;
+  color: #000000 !important;
+  font-weight: 700 !important;
+}
+
+.dark .badge-in_progress {
+  background-color: #3b82f6 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+.dark .badge-resolved {
+  background-color: #10b981 !important;
+  color: #000000 !important;
+  font-weight: 700 !important;
+}
+
+.dark .badge-closed {
+  background-color: #ef4444 !important;
+  color: #000000 !important;
+  font-weight: 700 !important;
+}
+
+/* Dark Mode Priority Badges */
+.dark .priority-low {
+  background-color: #10b981 !important;
+  color: #000000 !important;
+  font-weight: 700 !important;
+}
+
+.dark .priority-medium {
+  background-color: #3b82f6 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+.dark .priority-high {
+  background-color: #f59e0b !important;
+  color: #000000 !important;
+  font-weight: 700 !important;
+}
+
+.dark .priority-urgent {
+  background-color: #ef4444 !important;
+  color: #000000 !important;
+  font-weight: 700 !important;
+}
+
+/* Dark Mode Inputs */
+.dark input,
+.dark textarea,
+.dark select {
+  background-color: #1e1e2e !important;
+  border-color: #334155 !important;
+  color: #ffffff !important;
+}
+
+.dark .input-premium {
+  background-color: #1e1e2e !important;
+  border-color: #334155 !important;
+  color: #ffffff !important;
+}
+
+/* Dark Mode Table */
+.dark .bg-gray-50 {
+  background-color: #1a1a2e !important;
+}
+
+.dark .hover\:bg-gray-50:hover {
+  background-color: #262636 !important;
+}
+
+.dark .divide-gray-100 > :not([hidden]) ~ :not([hidden]) {
+  border-color: #2d3748 !important;
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+/* Slide Up Animation for AI Chat */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.3s ease-out;
+}
+
+/* Bounce Animation for AI Button */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+/* Pulse Animation for Online Status */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Spin Animation for Loading */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Slide In From Right */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.3s ease-out;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e2e8f0;
+  border-top-color: #4f46e5;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+/* Premium Spinner */
+.premium-spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(79, 70, 229, 0.2);
+  border-top-color: #4f46e5;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+/* Glass Card Effect */
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass-card {
+  background: rgba(30, 30, 46, 0.95);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #d946ef 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
